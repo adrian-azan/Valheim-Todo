@@ -9,13 +9,12 @@ public partial class Blueprint : Button
     private String _title;
 
     [Export]
-    private Array<Ingredients> _ingredients;
+    private Array<Materials> _materials;
 
     [Export]
     private Array<int> _quantities;
 
     private List _rootList;
-
     private int _total;
     private Label _totalLabel;
 
@@ -30,14 +29,17 @@ public partial class Blueprint : Button
     {
         if (@event is InputEventMouse inputEventMouse)
         {
+            if (inputEventMouse is InputEventMouseMotion)
+                return;
+
             if (inputEventMouse.ButtonMask == MouseButtonMask.Left)
             {
-                _rootList.AddItems(_ingredients, _quantities);
+                _rootList.AddMaterials(_materials, _quantities);
                 _total++;
             }
             else if (inputEventMouse.ButtonMask == MouseButtonMask.Right && _total > 0)
             {
-                _rootList.RemoveItems(_ingredients, _quantities);
+                _rootList.RemoveMaterials(_materials, _quantities);
                 _total--;
             }
 
