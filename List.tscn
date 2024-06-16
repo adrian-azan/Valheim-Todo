@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqknj7m5ldrnu"]
+
+[ext_resource type="Script" path="res://List.cs" id="1_4lmdq"]
+
+[node name="List" type="Node2D"]
+script = ExtResource("1_4lmdq")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 155.0
+offset_bottom = 402.0
+text = "lkasdjflkjasdlfkjasdl;kjflas"
