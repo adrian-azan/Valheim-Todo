@@ -19,7 +19,7 @@ public partial class Menu : Node2D
             foreach (String material in dictionary.Keys)
             {
                 if (Enum.TryParse<Materials>(material, out var materialType) == false)
-                    GD.PushWarning("Failed to process " + material.ToString() + "in " + blueprint.Name);
+                    GD.PushWarning("Failed to process " + material.ToString() + " in " + blueprint.Name);
                 else
                     blueprint._recipe.Add(materialType, dictionary[material]);
             }

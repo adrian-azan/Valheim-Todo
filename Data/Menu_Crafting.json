@@ -1,0 +1,100 @@
+{
+  "Cooking Station": {
+	"WOOD": 2
+  },
+  "Iron Cooking Station": {
+	"IRON": 3,
+	"CHAIN": 3
+  },
+  "Cauldron": {
+	"TIN": 10
+  },
+  "Spice Rack": {
+	"DANDELION": 3,
+	"CARROT": 2,
+	"MUSHROOM": 5,
+	"THISTLE": 3,
+	"TURNIP": 3
+  },
+  "Butchers Table": {
+	"ANCIENTBARK": 2,
+	"COREWOOD": 4,
+	"FINEWOOD": 4,
+	"SILVER": 2
+  },
+  "Workbench": {
+	"WOOD": 10
+  },
+  "Chopping Block": {
+	"WOOD": 10,
+	"FLINT": 10
+  },
+  "Tanning Rack": {
+	"WOOD": 10,
+	"FLINT": 15,
+	"LEATHERSCRAPS": 20,
+	"DEERHIDE": 5
+  },
+  "Adze": {
+	"FINEWOOD": 10,
+	"BRONZE": 3
+  },
+  "Tool Shelf": {
+	"IRON": 4,
+	"FINEWOOD": 10,
+	"OBSIDIAN": 4
+  },
+  "Stone Cutter": {
+	"WOOD": 10,
+	"IRON": 2,
+	"STONE": 4
+  },
+  "Forge": {
+	"STONE": 4,
+	"COAL": 4,
+	"WOOD": 10,
+	"COPPER": 6
+  },
+  "Forge Bellows": {
+	"WOOD": 5,
+	"DEERHIDE": 5,
+	"CHAIN": 4
+  },
+  "Anvils": {
+	"WOOD": 5,
+	"BRONZE": 2
+  },
+  "Grinding Wheel": {
+	"WOOD": 25,
+	"SHARPENINGSTONE": 1
+  },
+  "Smiths Anvil": {
+	"IRON": 20,
+	"WOOD": 5
+  },
+  "Forge Cooler": {
+	"FINEWOOD": 25,
+	"COPPER": 10
+  },
+  "Forge Tool Rack": {
+	"IRON": 15,
+	"WOOD": 10
+  },
+  "Smelter": {
+	"STONE": 20,
+	"SURTLINGCORE": 5
+  },
+  "Charcoal Kiln": {
+	"STONE": 20,
+	"SURTLINGCORE": 5
+  },
+  "Bee Hive": {
+	"WOOD": 10,
+	"QUEENBEE": 1
+  },
+  "Fermentor": {
+	"FINEWOOD": 30,
+	"BRONZE": 5,
+	"RESIN": 10
+  }
+}
