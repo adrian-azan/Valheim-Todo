@@ -17,5 +17,20 @@ public enum Materials
     RESIN,
     BONEFRAGMENTS,
     BRONZE,
-    RASPBERRIES
+    RASPBERRIES,
+    IRON,
+    CHAIN,
+    TIN,
+    DANDELION,
+    CARROT,
+    MUSHROOM,
+    THISTLE,
+    TURNIP,
+    FLINT,
+    SILVER,
+    OBSIDIAN,
+    COAL,
+    COPPER,
+    SHARPENING_STONE,
+    QUEEN_BEE
 }

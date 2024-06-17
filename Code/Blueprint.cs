@@ -20,7 +20,7 @@ public partial class Blueprint : Button
 
     public override void _Ready()
     {
-        _rootList = GetNode("../../List") as List;
+        _rootList = GetNode("../../../List") as List;
         _total = 0;
         _totalLabel = GetNode("Total") as Label;
     }
