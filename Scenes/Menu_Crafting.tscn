@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbvtepcdxawjj"]
+[gd_scene load_steps=4 format=3 uid="uid://bbvtepcdxawjj"]
 
 [ext_resource type="Texture2D" uid="uid://cx0j27ia2rdhv" path="res://Icons/Crafting.png" id="1_dj1m4"]
+[ext_resource type="Script" path="res://Code/Menu.cs" id="1_o52c2"]
 [ext_resource type="PackedScene" uid="uid://b32b24s58kjck" path="res://Scenes/Blueprint.tscn" id="2_bbirk"]
 
 [node name="Menu_Crafting" type="Node2D"]
+script = ExtResource("1_o52c2")
 
 [node name="Crafting" type="Sprite2D" parent="."]
 position = Vector2(504, 225)

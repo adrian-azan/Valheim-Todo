@@ -1,0 +1,155 @@
+{
+  "Bed": {
+	"WOOD": 8
+  },
+  "Dragon Bed": {
+	"FINEWOOD": 40,
+	"DEERHIDE": 7,
+	"WOLFPELT": 4,
+	"FEATHERS": 10,
+	"IRONNAILS": 15
+  },
+  "Chest": {
+	"WOOD": 10
+  },
+  "Reinforced Chest": {
+	"FINEWOOD": 10,
+	"IRON": 2
+  },
+  "Personal Chest": {
+	"FINEWOOD": 10,
+	"IRON": 8
+  },
+  "Stool": {
+	"FINEWOOD": 4
+  },
+  "Wood Chair": {
+	"FINEWOOD": 4
+  },
+  "Wood Bench": {
+	"FINEWOOD": 6
+  },
+  "Sitting Log": {
+	"COREWOOD": 2
+  },
+  "Raven Throne": {
+	"FINEWOOD": 20,
+	"IRONNAILS": 10
+  },
+  "Stone Throne": {
+	"STONE": 20,
+	"DEERHIDE": 2,
+	"WOLFPELT": 2
+  },
+  "Table": {
+	"FINEWOOD": 6
+  },
+  "Sconce": {
+	"WOOD": 2,
+	"COPPER": 2,
+	"RESIN": 2
+  },
+  "Standing Iron Torch": {
+	"IRON": 2,
+	"RESIN": 2
+  },
+  "Standing Wood Torch": {
+	"WOOD": 2,
+	"RESIN": 2
+  },
+  "Standing Green-Burning Iron Torch": {
+	"IRON": 2,
+	"GUCK": 2
+  },
+  "Standing Blue-Burning Iron Torch": {
+	"IRON": 2,
+	"GREYDWARFEYE": 2
+  },
+  "Standing Brazier": {
+	"BRONZE": 5,
+	"COAL": 2,
+	"FENRISCLAW": 3
+  },
+  "Blue Standing Brazier": {
+	"BRONZE": 5,
+	"GREYDWARFEYE": 5,
+	"FENRISCLAW": 3
+  },
+  "Hanging Brazier": {
+	"BRONZE": 5,
+	"COAL": 2,
+	"CHAIN": 1
+  },
+  "Item Stand Vertical": {
+	"FINEWOOD": 4,
+	"BRONZENAILS": 1
+  },
+  "Item Stand Horizontal": {
+	"FINEWOOD": 4,
+	"BRONZENAILS": 1
+  },
+  "Sign": {
+	"WOOD": 2,
+	"COAL": 1
+  },
+  "Wolf Rug": {
+	"WOLFPELT": 4
+  },
+  "Deer Rug": {
+	"DEERHIDE": 4
+  },
+  "Red Jute Rug": {
+	"REDJUTE": 4
+  },
+  "Black Banner": {
+	"LEATHERSCRAPS": 6,
+	"FINEWOOD": 2,
+	"COAL": 4
+  },
+  "Blue Banner": {
+	"LEATHERSCRAPS": 6,
+	"FINEWOOD": 2,
+	"BLUEBERRIES": 4
+  },
+  "White and Red Striped Banner": {
+	"LEATHERSCRAPS": 6,
+	"FINEWOOD": 2,
+	"RASPBERRIES": 4
+  },
+  "Red Banner": {
+	"LEATHERSCRAPS": 6,
+	"FINEWOOD": 2,
+	"BLOODBAG": 1
+  },
+  "Green Banner": {
+	"LEATHERSCRAPS": 6,
+	"FINEWOOD": 2,
+	"GUCK": 1
+  },
+  "Yellow Banner": {
+	"LEATHERSCRAPS": 6,
+	"FINEWOOD": 2,
+	"COAL": 2,
+	"DANDELION": 4
+  },
+  "Purple Banner": {
+	"LEATHERSCRAPS": 6,
+	"FINEWOOD": 2,
+	"BLUEBERRIES": 2,
+	"RASPBERRIES": 4
+  },
+  "Red Jute Banner": {
+	"REDJUTE": 4,
+	"FINEWOOD": 1
+  },
+  "Maypole": {
+	"WOOD": 10,
+	"DANDELION": 4,
+	"THISTLE": 4
+  },
+  "Armour Stand": {
+	"FINEWOOD": 8,
+	"IRONNAILS": 4,
+	"LEATHERSCRAPS": 2
+  }
+}

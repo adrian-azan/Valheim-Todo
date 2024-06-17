@@ -32,5 +32,12 @@ public enum Materials
     COAL,
     COPPER,
     SHARPENING_STONE,
-    QUEEN_BEE
+    QUEEN_BEE,
+    WOLFPELT,
+    FEATHERS,
+    FENRISCLAW,
+    GUCK,
+    REDJUTE,
+    BLUEBERRIES,
+    BLOODBAG
 }

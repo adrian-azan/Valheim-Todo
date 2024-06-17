@@ -13,29 +13,29 @@ public partial class List : Node2D
         _materialsRequiredText = GetNode("ListText") as Label;
     }
 
-    public void AddMaterials(Array<Materials> materials, Array<int> quantities)
+    public void AddMaterials(Dictionary<Materials, int> _recipe)
     {
-        for (int i = 0; i < materials.Count; i++)
+        foreach (Materials material in _recipe.Keys)
         {
-            if (_materialsRequired.ContainsKey(materials[i]))
-                _materialsRequired[materials[i]] += quantities[i];
+            if (_materialsRequired.ContainsKey(material))
+                _materialsRequired[material] += _recipe[material];
             else
-                _materialsRequired[materials[i]] = quantities[i];
+                _materialsRequired[material] = _recipe[material];
         }
 
         UpdateListText();
     }
 
-    public void RemoveMaterials(Array<Materials> materials, Array<int> quantities)
+    public void RemoveMaterials(Dictionary<Materials, int> _recipe)
     {
-        for (int i = 0; i < materials.Count; i++)
+        foreach (Materials material in _recipe.Keys)
         {
-            if (_materialsRequired.ContainsKey(materials[i]))
+            if (_materialsRequired.ContainsKey(material))
             {
-                _materialsRequired[materials[i]] -= quantities[i];
+                _materialsRequired[material] -= _recipe[material];
 
-                if (_materialsRequired[materials[i]] == 0)
-                    _materialsRequired.Remove(materials[i]);
+                if (_materialsRequired[material] == 0)
+                    _materialsRequired.Remove(material);
             }
         }
 

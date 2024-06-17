@@ -15,6 +15,7 @@ public partial class Tabs : Node2D
         _menus = new Godot.Collections.Array<Node2D>();
         _menus.Add(GetNode("../Menu_Misc") as Node2D);
         _menus.Add(GetNode("../Menu_Crafting") as Node2D);
+        _menus.Add(GetNode("../Menu_Furniture") as Node2D);
 
         foreach (Node2D node in _menus)
         {
@@ -24,7 +25,7 @@ public partial class Tabs : Node2D
         _menus[0].Visible = true;
 
         _selected = 0;
-        _size = 2;
+        _size = _menus.Count;
     }
 
     public static Tabs operator ++(Tabs target)
