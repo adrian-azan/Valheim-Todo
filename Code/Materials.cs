@@ -39,5 +39,8 @@ public enum Materials
     BLUEBERRIES,
     BLOODBAG,
     SHARPENINGSTONE,
-    QUEENBEE
+    QUEENBEE,
+    COINS,
+    RUBY,
+    SILVERNECKLACE
 }

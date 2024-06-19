@@ -14,14 +14,21 @@ public partial class Menu : Node2D
 
         foreach (Blueprint blueprint in blueprints)
         {
-            Dictionary<String, int> dictionary = blueprintDetails[blueprint.Name].AsGodotDictionary<String, int>();
-
-            foreach (String material in dictionary.Keys)
+            try
             {
-                if (Enum.TryParse<Materials>(material, out var materialType) == false)
-                    GD.PushWarning("Failed to process " + material.ToString() + " in " + blueprint.Name);
-                else
-                    blueprint._recipe.Add(materialType, dictionary[material]);
+                Dictionary<String, int> dictionary = blueprintDetails[blueprint.Name].AsGodotDictionary<String, int>();
+
+                foreach (String material in dictionary.Keys)
+                {
+                    if (Enum.TryParse<Materials>(material, out var materialType) == false)
+                        GD.PushWarning("Failed to process " + material.ToString() + " in " + blueprint.Name);
+                    else
+                        blueprint._recipe.Add(materialType, dictionary[material]);
+                }
+            }
+            catch (Exception e)
+            {
+                GD.PushWarning("Could not process " + blueprint.Name);
             }
         }
     }

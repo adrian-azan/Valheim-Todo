@@ -1,10 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjelheoakhlhi"]
+[gd_scene load_steps=4 format=3 uid="uid://cjelheoakhlhi"]
 
+[ext_resource type="Script" path="res://Code/Menu.cs" id="1_4fiqj"]
 [ext_resource type="Texture2D" uid="uid://dbgugsgs34ke6" path="res://Icons/Misc.png" id="1_rwl43"]
 [ext_resource type="PackedScene" uid="uid://b32b24s58kjck" path="res://Scenes/Blueprint.tscn" id="2_gcv1j"]
 
 [node name="Misc" type="Node2D"]
-visible = false
+script = ExtResource("1_4fiqj")
 
 [node name="Misc" type="Sprite2D" parent="."]
 position = Vector2(501, 224)
@@ -67,8 +68,50 @@ offset_top = 108.0
 offset_right = 338.0
 offset_bottom = 168.0
 
-[node name="CartographyTable" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+[node name="Cartography Table" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 535.0
 offset_top = 110.0
 offset_right = 593.0
 offset_bottom = 170.0
+
+[node name="Treasure Chest" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 338.0
+offset_top = 116.0
+offset_right = 396.0
+offset_bottom = 176.0
+
+[node name="Coin Pile" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 405.0
+offset_top = 111.0
+offset_right = 463.0
+offset_bottom = 171.0
+
+[node name="Coin Stack" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 476.0
+offset_top = 113.0
+offset_right = 534.0
+offset_bottom = 173.0
+
+[node name="Round Pole Fence" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 732.0
+offset_top = 49.0
+offset_right = 790.0
+offset_bottom = 109.0
+
+[node name="Stakewall" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 799.0
+offset_top = 44.0
+offset_right = 857.0
+offset_bottom = 104.0
+
+[node name="Sharp Stake" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 870.0
+offset_top = 46.0
+offset_right = 928.0
+offset_bottom = 106.0
+
+[node name="Ward" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 11.0
+offset_top = 113.0
+offset_right = 69.0
+offset_bottom = 173.0
