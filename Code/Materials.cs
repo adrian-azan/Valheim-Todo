@@ -31,6 +31,16 @@ public enum Materials
     OBSIDIAN,
     COAL,
     COPPER,
-    SHARPENING_STONE,
-    QUEEN_BEE
+    WOLFPELT,
+    FEATHERS,
+    FENRISCLAW,
+    GUCK,
+    REDJUTE,
+    BLUEBERRIES,
+    BLOODBAG,
+    SHARPENINGSTONE,
+    QUEENBEE,
+    COINS,
+    RUBY,
+    SILVERNECKLACE
 }

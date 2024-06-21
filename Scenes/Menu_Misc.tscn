@@ -1,10 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjelheoakhlhi"]
+[gd_scene load_steps=4 format=3 uid="uid://cjelheoakhlhi"]
 
+[ext_resource type="Script" path="res://Code/Menu.cs" id="1_4fiqj"]
 [ext_resource type="Texture2D" uid="uid://dbgugsgs34ke6" path="res://Icons/Misc.png" id="1_rwl43"]
 [ext_resource type="PackedScene" uid="uid://b32b24s58kjck" path="res://Scenes/Blueprint.tscn" id="2_gcv1j"]
 
 [node name="Misc" type="Node2D"]
-visible = false
+script = ExtResource("1_4fiqj")
 
 [node name="Misc" type="Sprite2D" parent="."]
 position = Vector2(501, 224)
@@ -18,77 +19,99 @@ offset_top = 46.0
 offset_right = 138.0
 offset_bottom = 106.0
 _title = "Campfire"
-_materials = Array[int]([0, 1])
-_quantities = Array[int]([5, 2])
 
 [node name="Bonfire" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 144.0
 offset_top = 46.0
 offset_right = 202.0
 offset_bottom = 106.0
-_materials = Array[int]([5, 4, 2, 3])
-_quantities = Array[int]([1, 5, 5, 5])
 
 [node name="Hearth" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 208.0
 offset_top = 45.0
 offset_right = 266.0
 offset_bottom = 105.0
-_materials = Array[int]([0])
-_quantities = Array[int]([15])
 
 [node name="WoodDragonAdornment" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 674.0
 offset_top = 49.0
 offset_right = 732.0
 offset_bottom = 109.0
-_materials = Array[int]([2])
-_quantities = Array[int]([10])
 
 [node name="Portal" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 930.0
 offset_top = 48.0
 offset_right = 988.0
 offset_bottom = 108.0
-_materials = Array[int]([6, 2, 5])
-_quantities = Array[int]([10, 20, 2])
 
 [node name="Cart" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 79.0
 offset_top = 116.0
 offset_right = 137.0
 offset_bottom = 176.0
-_materials = Array[int]([1, 7])
-_quantities = Array[int]([20, 10])
 
 [node name="Longship" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 142.0
 offset_top = 111.0
 offset_right = 200.0
 offset_bottom = 171.0
-_materials = Array[int]([8, 9, 2, 4])
-_quantities = Array[int]([100, 10, 40, 40])
 
 [node name="Raft" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 209.0
 offset_top = 106.0
 offset_right = 267.0
 offset_bottom = 166.0
-_materials = Array[int]([1, 10, 11])
-_quantities = Array[int]([20, 6, 6])
 
 [node name="Karve" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 280.0
 offset_top = 108.0
 offset_right = 338.0
 offset_bottom = 168.0
-_materials = Array[int]([2, 9, 11, 7])
-_quantities = Array[int]([30, 10, 20, 80])
 
-[node name="CartographyTable" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+[node name="Cartography Table" parent="Blueprints" instance=ExtResource("2_gcv1j")]
 offset_left = 535.0
 offset_top = 110.0
 offset_right = 593.0
 offset_bottom = 170.0
-_materials = Array[int]([2, 12, 13, 10, 14])
-_quantities = Array[int]([10, 10, 2, 5, 4])
+
+[node name="Treasure Chest" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 338.0
+offset_top = 116.0
+offset_right = 396.0
+offset_bottom = 176.0
+
+[node name="Coin Pile" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 405.0
+offset_top = 111.0
+offset_right = 463.0
+offset_bottom = 171.0
+
+[node name="Coin Stack" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 476.0
+offset_top = 113.0
+offset_right = 534.0
+offset_bottom = 173.0
+
+[node name="Round Pole Fence" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 732.0
+offset_top = 49.0
+offset_right = 790.0
+offset_bottom = 109.0
+
+[node name="Stakewall" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 799.0
+offset_top = 44.0
+offset_right = 857.0
+offset_bottom = 104.0
+
+[node name="Sharp Stake" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 870.0
+offset_top = 46.0
+offset_right = 928.0
+offset_bottom = 106.0
+
+[node name="Ward" parent="Blueprints" instance=ExtResource("2_gcv1j")]
+offset_left = 11.0
+offset_top = 113.0
+offset_right = 69.0
+offset_bottom = 173.0

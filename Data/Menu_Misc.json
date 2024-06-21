@@ -1,0 +1,79 @@
+{
+  "Campfire": {
+	"STONE": 5,
+	"WOOD": 2
+  },
+  "Bonfire": {
+	"SURTLINGCORE": 1,
+	"ANCIENTBARK": 5,
+	"FINEWOOD": 5,
+	"COREWOOD": 5
+  },
+  "Hearth": {
+	"STONE": 15
+  },
+  "WoodDragonAdornment": {
+	"FINEWOOD": 10
+  },
+  "Portal": {
+	"GREYDWARFEYE": 10,
+	"FINEWOOD": 20,
+	"SURTLINGCORE": 2
+  },
+  "Cart": {
+	"WOOD": 20,
+	"BRONZENAILS": 10
+  },
+  "Longship": {
+	"IRONNAILS": 100,
+	"DEERHIDE": 10,
+	"FINEWOOD": 40,
+	"ANCIENTBARK": 40
+  },
+  "Raft": {
+	"WOOD": 20,
+	"LEATHERSCRAPS": 6,
+	"RESIN": 6
+  },
+  "Karve": {
+	"FINEWOOD": 30,
+	"DEERHIDE": 10,
+	"RESIN": 20,
+	"BRONZENAILS": 80
+  },
+  "Cartography Table": {
+	"FINEWOOD": 10,
+	"BONEFRAGMENTS": 1,
+	"BRONZE": 2,
+	"LEATHERSCRAPS": 5,
+	"RASPBERRIES": 4
+  },
+  "Round Pole Fence": {
+	"WOOD": 1
+  },
+  "Stakewall": {
+	"WOOD": 4
+  },
+  "Sharp Stake": {
+	"WOOD": 6,
+	"COREWOOD": 4
+  },
+  "Treasure Chest": {
+	"COINS": 99,
+	"RUBY": 5,
+	"SILVERNECKLACE": 2,
+	"FINEWOOD": 8,
+	"SILVER": 2
+  },
+  "Coin Pile": {
+	"COINS": 999
+  },
+  "Coin Stack": {
+	"COINS": 99
+  },
+  "Ward": {
+	"FINEWOOD": 5,
+	"GREYDWARFEYE": 5,
+	"SURTLINGCORE": 1
+  }
+}
