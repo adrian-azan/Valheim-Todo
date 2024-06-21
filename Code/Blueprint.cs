@@ -8,17 +8,17 @@ public partial class Blueprint : Button
     [Export]
     private String _title;
 
-    public Dictionary<Materials, int> _recipe;
+    public Dictionary<Materials, int> _blueprint;
 
-    private List _rootList;
+    private List _cumulativeList;
     private int _total;
     private Label _totalLabel;
 
     public override void _Ready()
     {
-        _recipe = new Dictionary<Materials, int>();
+        _blueprint = new Dictionary<Materials, int>();
 
-        _rootList = GetNode("../../../List") as List;
+        _cumulativeList = GetNode("../../../List") as List;
         _total = 0;
         _totalLabel = GetNode("Total") as Label;
     }
@@ -32,12 +32,12 @@ public partial class Blueprint : Button
 
             if (inputEventMouse.ButtonMask == MouseButtonMask.Left)
             {
-                _rootList.AddMaterials(_recipe);
+                _cumulativeList.AddMaterials(_blueprint);
                 _total++;
             }
             else if (inputEventMouse.ButtonMask == MouseButtonMask.Right && _total > 0)
             {
-                _rootList.RemoveMaterials(_recipe);
+                _cumulativeList.RemoveMaterials(_blueprint);
                 _total--;
             }
 

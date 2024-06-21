@@ -23,7 +23,7 @@ public partial class Menu : Node2D
                     if (Enum.TryParse<Materials>(material, out var materialType) == false)
                         GD.PushWarning("Failed to process " + material.ToString() + " in " + blueprint.Name);
                     else
-                        blueprint._recipe.Add(materialType, dictionary[material]);
+                        blueprint._blueprint.Add(materialType, dictionary[material]);
                 }
             }
             catch (Exception e)
