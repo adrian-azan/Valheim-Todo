@@ -86,8 +86,4 @@ public partial class Tabs : Node2D
         else
             _menuTotals[_selected].Text = total.ToString();
     }
-
-    public void Remove()
-    {
-    }
 }
