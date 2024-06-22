@@ -10,12 +10,19 @@ public partial class Tabs : Node2D
 
     private Godot.Collections.Array<Node2D> _menus;
 
+    private Array<Label> _menuTotals;
+
     public override void _Ready()
     {
         _menus = new Godot.Collections.Array<Node2D>();
         _menus.Add(GetNode("../Menu_Misc") as Node2D);
         _menus.Add(GetNode("../Menu_Crafting") as Node2D);
         _menus.Add(GetNode("../Menu_Furniture") as Node2D);
+
+        _menuTotals = new Array<Label>();
+        _menuTotals.Add(GetNode("Misc/Total") as Label);
+        _menuTotals.Add(GetNode("Crafting/Total") as Label);
+        _menuTotals.Add(GetNode("Furniture/Total") as Label);
 
         foreach (Node2D node in _menus)
         {
@@ -26,6 +33,8 @@ public partial class Tabs : Node2D
 
         _selected = 0;
         _size = _menus.Count;
+
+        GetNode<CustomSignals>("/root/CustomSignals").AddToTotal += Add;
     }
 
     public static Tabs operator ++(Tabs target)
@@ -58,5 +67,23 @@ public partial class Tabs : Node2D
         target._menus[target._selected].Visible = true;
 
         return target;
+    }
+
+    public void Add(int amount)
+    {
+        int total = _menuTotals[_selected].GetMeta("total", -1).As<int>();
+
+        if (total == -1)
+        {
+            GD.PushWarning(String.Format("Meta Data 'Total' does not exist in object {0}", Name));
+        }
+
+        total += amount;
+        _menuTotals[_selected].SetMeta("total", Variant.From(total));
+
+        if (total == 0)
+            _menuTotals[_selected].Text = "";
+        else
+            _menuTotals[_selected].Text = total.ToString();
     }
 }
