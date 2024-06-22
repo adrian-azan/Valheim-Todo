@@ -46,5 +46,7 @@ public partial class Blueprint : Button
             else
                 _totalLabel.Text = "";
         }
+
+        GetNode<CustomSignals>("/root/CustomSignals").EmitSignal(nameof(CustomSignals.AddToTotal));
     }
 }

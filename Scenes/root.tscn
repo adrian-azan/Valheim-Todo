@@ -14,7 +14,6 @@ script = ExtResource("1_ggbcd")
 position = Vector2(1012, 7)
 
 [node name="Menu_Misc" parent="." instance=ExtResource("1_ew565")]
-visible = true
 
 [node name="Menu_Crafting" parent="." instance=ExtResource("3_xogos")]
 visible = false
