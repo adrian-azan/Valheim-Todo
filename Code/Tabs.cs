@@ -69,17 +69,22 @@ public partial class Tabs : Node2D
         return target;
     }
 
-    public void Add()
+    public void Add(int amount)
     {
-        int total = GetMeta("total", -1).As<int>();
+        int total = _menuTotals[_selected].GetMeta("total", -1).As<int>();
 
         if (total == -1)
         {
-            GD.PushWarning(String.Format("Meta Data 'total' does not exist in object {0}", Name));
+            GD.PushWarning(String.Format("Meta Data 'Total' does not exist in object {0}", Name));
         }
 
-        SetMeta("total", Variant.From(total));
-        _menuTotals[_selected].Text = total.ToString();
+        total += amount;
+        _menuTotals[_selected].SetMeta("total", Variant.From(total));
+
+        if (total == 0)
+            _menuTotals[_selected].Text = "";
+        else
+            _menuTotals[_selected].Text = total.ToString();
     }
 
     public void Remove()

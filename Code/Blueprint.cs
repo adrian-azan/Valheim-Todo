@@ -34,11 +34,13 @@ public partial class Blueprint : Button
             {
                 _cumulativeList.AddMaterials(_blueprint);
                 _total++;
+                GetNode<CustomSignals>("/root/CustomSignals").EmitSignal(nameof(CustomSignals.AddToTotal), 1);
             }
             else if (inputEventMouse.ButtonMask == MouseButtonMask.Right && _total > 0)
             {
                 _cumulativeList.RemoveMaterials(_blueprint);
                 _total--;
+                GetNode<CustomSignals>("/root/CustomSignals").EmitSignal(nameof(CustomSignals.AddToTotal), -1);
             }
 
             if (_total > 0)
@@ -46,7 +48,5 @@ public partial class Blueprint : Button
             else
                 _totalLabel.Text = "";
         }
-
-        GetNode<CustomSignals>("/root/CustomSignals").EmitSignal(nameof(CustomSignals.AddToTotal));
     }
 }

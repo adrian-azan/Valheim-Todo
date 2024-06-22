@@ -6,6 +6,7 @@
 script = ExtResource("1_4feb2")
 
 [node name="Misc" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 100.0
 offset_top = 20.0
 offset_right = 250.0
@@ -13,34 +14,36 @@ offset_bottom = 40.0
 
 [node name="Total" type="Label" parent="Misc"]
 layout_mode = 0
-offset_left = 110.0
+offset_left = 137.0
 offset_top = -3.0
 offset_right = 150.0
 offset_bottom = 20.0
 metadata/total = 0
 
 [node name="Crafting" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 270.0
 offset_top = 20.0
 offset_right = 420.0
 offset_bottom = 40.0
 
 [node name="Total" type="Label" parent="Crafting"]
-offset_left = 110.0
+offset_left = 136.0
 offset_top = -3.0
 offset_right = 150.0
 offset_bottom = 20.0
-metadata/Total = 0
+metadata/total = 0
 
 [node name="Furniture" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 750.0
 offset_top = 20.0
 offset_right = 900.0
 offset_bottom = 40.0
 
 [node name="Total" type="Label" parent="Furniture"]
-offset_left = 110.0
+offset_left = 142.0
 offset_top = -3.0
-offset_right = 150.0
+offset_right = 156.0
 offset_bottom = 20.0
-metadata/Total = 0
+metadata/total = 0
