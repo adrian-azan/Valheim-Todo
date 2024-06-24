@@ -2,6 +2,7 @@ using Godot;
 using Godot.Collections;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public partial class Menu_Food : Node2D
 {
@@ -25,6 +26,8 @@ public partial class Menu_Food : Node2D
 
             var recipeButton = blueprint.Instantiate() as Blueprint;
             recipeButton.Text = string.Format("{0,-20} {1,-8} {2}     ", recipeName, stats["Health"], stats["Stamina"]);
+            recipeButton.SetMeta("Stamina", stats["Stamina"]);
+            recipeButton.SetMeta("Health", stats["Health"]);
 
             _recipes.AddChild(recipeButton);
 
@@ -47,6 +50,21 @@ public partial class Menu_Food : Node2D
             {
                 GD.PushWarning("Could not process " + recipeName);
             }
+        }
+    }
+
+    public void Sort(StringName sortby)
+    {
+        GridContainer grid = GetNode<GridContainer>("Recipes");
+        Array<Node> recipes = grid.GetChildren();
+        List<Node> sortedRecipes;
+
+        sortedRecipes = recipes.OrderByDescending(recipe => (recipe.GetMeta(sortby).As<int>())).ToList();
+
+        int index = 0;
+        foreach (var recipe in sortedRecipes)
+        {
+            grid.MoveChild(recipe, index++);
         }
     }
 }
