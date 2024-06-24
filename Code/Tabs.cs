@@ -18,6 +18,7 @@ public partial class Tabs : Node2D
         _menus.Add(GetNode("../Menu_Misc") as Node2D);
         _menus.Add(GetNode("../Menu_Crafting") as Node2D);
         _menus.Add(GetNode("../Menu_Furniture") as Node2D);
+        _menus.Add(GetNode("../Menu_Food") as Node2D);
 
         _menuTotals = new Array<Label>();
         _menuTotals.Add(GetNode("Misc/Total") as Label);
@@ -71,6 +72,10 @@ public partial class Tabs : Node2D
 
     public void Add(int amount)
     {
+        //Cooking menu has no total tab yet. This prevents out of bounds exceptions
+        if (_selected == 3)
+            return;
+
         int total = _menuTotals[_selected].GetMeta("total", -1).As<int>();
 
         if (total == -1)

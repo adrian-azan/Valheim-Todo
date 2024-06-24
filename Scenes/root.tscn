@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://1wqi51fdcwe2"]
+[gd_scene load_steps=8 format=3 uid="uid://1wqi51fdcwe2"]
 
 [ext_resource type="PackedScene" uid="uid://cjelheoakhlhi" path="res://Scenes/Menu_Misc.tscn" id="1_ew565"]
 [ext_resource type="Script" path="res://Code/Root.cs" id="1_ggbcd"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bbvtepcdxawjj" path="res://Scenes/Menu_Crafting.tscn" id="3_xogos"]
 [ext_resource type="PackedScene" uid="uid://d1fhqyks0lhuk" path="res://Scenes/Tabs.tscn" id="5_cwuhv"]
 [ext_resource type="PackedScene" uid="uid://d2lp470wjsk5k" path="res://Scenes/Menu_Furniture.tscn" id="5_dku0v"]
+[ext_resource type="PackedScene" uid="uid://bix3m3f2rc25p" path="res://Scenes/Menu_Food.tscn" id="6_kp8yc"]
 
 [node name="Root" type="Node2D"]
 script = ExtResource("1_ggbcd")
@@ -13,11 +14,12 @@ script = ExtResource("1_ggbcd")
 [node name="List" parent="." instance=ExtResource("1_pam8v")]
 position = Vector2(1012, 7)
 
+[node name="Tabs" parent="." instance=ExtResource("5_cwuhv")]
+
 [node name="Menu_Misc" parent="." instance=ExtResource("1_ew565")]
 
 [node name="Menu_Crafting" parent="." instance=ExtResource("3_xogos")]
-visible = false
 
 [node name="Menu_Furniture" parent="." instance=ExtResource("5_dku0v")]
 
-[node name="Tabs" parent="." instance=ExtResource("5_cwuhv")]
+[node name="Menu_Food" parent="." instance=ExtResource("6_kp8yc")]
