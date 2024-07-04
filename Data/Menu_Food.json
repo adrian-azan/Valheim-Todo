@@ -158,5 +158,36 @@
 	  "Health": 20,
 	  "Stamina": 60
 	}
+  },
+  "WolfJerky": {
+	"Ingredients": {
+	  "HONEY": 1,
+	  "WOLFMEAT": 1
+	},
+	"Stats": {
+	  "Health": 33,
+	  "Stamina": 33
+	}
+  },
+  "WolfSkewer": {
+	"Ingredients": {
+	  "ONION": 1,
+	  "WOLFMEAT": 1,
+	  "MUSHROOM": 2
+	},
+	"Stats": {
+	  "Health": 33,
+	  "Stamina": 33
+	}
+  },
+  "Eyescream": {
+	"Ingredients": {
+	  "FREEZEGLAND": 1,
+	  "GREYDWARFEYE": 3
+	},
+	"Stats": {
+	  "Health": 33,
+	  "Stamina": 33
+	}
   }
 }
