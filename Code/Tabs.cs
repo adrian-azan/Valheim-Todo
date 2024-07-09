@@ -51,6 +51,21 @@ public partial class Tabs : Node2D
 
         target._menus[target._selected].Visible = true;
 
+        if (target._selected != 3)
+        {
+            foreach (Label node in target._menuTotals)
+            {
+                node.Visible = true;
+            }
+        }
+        else
+        {
+            foreach (Label node in target._menuTotals)
+            {
+                node.Visible = false;
+            }
+        }
+
         return target;
     }
 
@@ -66,6 +81,21 @@ public partial class Tabs : Node2D
         }
 
         target._menus[target._selected].Visible = true;
+
+        if (target._selected != 3)
+        {
+            foreach (Label node in target._menuTotals)
+            {
+                node.Visible = true;
+            }
+        }
+        else
+        {
+            foreach (Label node in target._menuTotals)
+            {
+                node.Visible = false;
+            }
+        }
 
         return target;
     }
