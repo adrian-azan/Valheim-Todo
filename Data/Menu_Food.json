@@ -1,0 +1,193 @@
+{
+  "GrilledNeckTail": {
+	"Ingredients": {
+	  "NECKTAIL": 1
+	},
+	"Stats": {
+	  "Health": 25,
+	  "Stamina": 8
+	}
+  },
+  "CookedBoarMeat": {
+	"Ingredients": {
+	  "BOARMEAT": 1
+	},
+	"Stats": {
+	  "Health": 30,
+	  "Stamina": 10
+	}
+  },
+  "CookedDeerMeat": {
+	"Ingredients": {
+	  "DEERMEAT": 1
+	},
+	"Stats": {
+	  "Health": 35,
+	  "Stamina": 12
+	}
+  },
+  "BoarJerky": {
+	"Ingredients": {
+	  "BOARMEAT": 1,
+	  "HONEY": 1
+	},
+	"Stats": {
+	  "Health": 23,
+	  "Stamina": 23
+	}
+  },
+  "CarrotSoup": {
+	"Ingredients": {
+	  "MUSHROOM": 1,
+	  "CARROT": 3
+	},
+	"Stats": {
+	  "Health": 15,
+	  "Stamina": 45
+	}
+  },
+  "QueensJam": {
+	"Ingredients": {
+	  "RASPBERRIES": 8,
+	  "BLUEBERRIES": 6
+	},
+	"Stats": {
+	  "Health": 14,
+	  "Stamina": 40
+	}
+  },
+  "CookedFish": {
+	"Ingredients": {
+	  "RAWFISH": 1
+	},
+	"Stats": {
+	  "Health": 45,
+	  "Stamina": 15
+	}
+  },
+  "DeerStew": {
+	"Ingredients": {
+	  "BLUEBERRIES": 1,
+	  "CARROT": 1,
+	  "COOKEDDEERMEAT": 1
+	},
+	"Stats": {
+	  "Health": 45,
+	  "Stamina": 15
+	}
+  },
+  "MincedMeatSauce": {
+	"Ingredients": {
+	  "BOARMEAT": 1,
+	  "NECKTAIL": 1,
+	  "CARROT": 1
+	},
+	"Stats": {
+	  "Health": 40,
+	  "Stamina": 13
+	}
+  },
+  "Muckshake": {
+	"Ingredients": {
+	  "OOZE": 1,
+	  "RASPBERRIES": 2,
+	  "BLUEBERRIES": 2
+	},
+	"Stats": {
+	  "Health": 16,
+	  "Stamina": 50
+	}
+  },
+  "TurnipStew": {
+	"Ingredients": {
+	  "BOARMEAT": 1,
+	  "TURNIP": 3
+	},
+	"Stats": {
+	  "Health": 18,
+	  "Stamina": 55
+	}
+  },
+  "Sausages": {
+	"Ingredients": {
+	  "ENTRAILS": 4,
+	  "BOARMEAT": 1,
+	  "THISTLE": 1
+	},
+	"Stats": {
+	  "Health": 55,
+	  "Stamina": 18
+	}
+  },
+  "BlackSoup": {
+	"Ingredients": {
+	  "BLOODBAG": 1,
+	  "HONEY": 1,
+	  "TURNIP": 1
+	},
+	"Stats": {
+	  "Health": 50,
+	  "Stamina": 17
+	}
+  },
+  "CookedSerpentMeat": {
+	"Ingredients": {
+	  "SERPENTMEAT": 1
+	},
+	"Stats": {
+	  "Health": 70,
+	  "Stamina": 23
+	}
+  },
+  "SerpentStew": {
+	"Ingredients": {
+	  "MUSHROOM": 1,
+	  "COOKEDSERPENTMEAT": 1,
+	  "HONEY": 2
+	},
+	"Stats": {
+	  "Health": 80,
+	  "Stamina": 26
+	}
+  },
+  "OnionSoup": {
+	"Ingredients": {
+	  "ONION": 3
+	},
+	"Stats": {
+	  "Health": 20,
+	  "Stamina": 60
+	}
+  },
+  "WolfJerky": {
+	"Ingredients": {
+	  "HONEY": 1,
+	  "WOLFMEAT": 1
+	},
+	"Stats": {
+	  "Health": 33,
+	  "Stamina": 33
+	}
+  },
+  "WolfSkewer": {
+	"Ingredients": {
+	  "ONION": 1,
+	  "WOLFMEAT": 1,
+	  "MUSHROOM": 2
+	},
+	"Stats": {
+	  "Health": 33,
+	  "Stamina": 33
+	}
+  },
+  "Eyescream": {
+	"Ingredients": {
+	  "FREEZEGLAND": 1,
+	  "GREYDWARFEYE": 3
+	},
+	"Stats": {
+	  "Health": 33,
+	  "Stamina": 33
+	}
+  }
+}

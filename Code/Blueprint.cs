@@ -12,7 +12,7 @@ public partial class Blueprint : Button
 
     private List _cumulativeList;
     private int _total;
-    private Label _totalLabel;
+    public Label _totalLabel;
 
     public override void _Ready()
     {
