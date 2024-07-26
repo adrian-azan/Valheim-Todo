@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b32b24s58kjck"]
+[gd_scene load_steps=3 format=3 uid="uid://b32b24s58kjck"]
 
+[ext_resource type="FontFile" uid="uid://bd6dl2w4lhdn3" path="res://Data/Roboto_Mono/static/RobotoMono-SemiBold.ttf" id="1_ly88b"]
 [ext_resource type="Script" path="res://Code/Blueprint.cs" id="1_rhr2q"]
 
 [node name="Blueprint" type="Button"]
 offset_right = 58.0
 offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("1_ly88b")
+alignment = 0
 script = ExtResource("1_rhr2q")
 
 [node name="Total" type="Label" parent="."]
