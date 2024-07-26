@@ -30,13 +30,13 @@ public partial class Blueprint : Button
             if (inputEventMouse is InputEventMouseMotion)
                 return;
 
-            if (inputEventMouse.ButtonMask == MouseButtonMask.Left)
+            if (inputEventMouse.ButtonMask == MouseButtonMask.Left || Input.IsActionJustPressed("AddMultiple"))
             {
                 _cumulativeList.AddMaterials(_blueprint);
                 _total++;
                 GetNode<CustomSignals>("/root/CustomSignals").EmitSignal(nameof(CustomSignals.AddToTotal), 1);
             }
-            else if (inputEventMouse.ButtonMask == MouseButtonMask.Right && _total > 0)
+            else if ((inputEventMouse.ButtonMask == MouseButtonMask.Right && _total > 0) || (Input.IsActionJustPressed("RemoveMultiple") && _total > 0))
             {
                 _cumulativeList.RemoveMaterials(_blueprint);
                 _total--;
