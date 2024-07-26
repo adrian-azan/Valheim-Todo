@@ -21,6 +21,8 @@ public partial class Blueprint : Button
         _cumulativeList = GetNode("../../../List") as List;
         _total = 0;
         _totalLabel = GetNode("Total") as Label;
+
+        GetNode<CustomSignals>("/root/CustomSignals").Clear += ClearTotal;
     }
 
     private void Clicked(InputEvent @event)
@@ -48,5 +50,11 @@ public partial class Blueprint : Button
             else
                 _totalLabel.Text = "";
         }
+    }
+
+    public void ClearTotal()
+    {
+        _total = 0;
+        _totalLabel.Text = "";
     }
 }
