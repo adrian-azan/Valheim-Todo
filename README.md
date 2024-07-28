@@ -14,7 +14,7 @@ Very often I am at a loss to keep track of what materials I need to craft object
 Working the program should be very easy. Head over to the [releases page](https://github.com/adrian-azan/Valheim-Todo/releases) to download the latest version of the software. The zip will include two things. The application, and then a folder full of extensions Godot exports with the application. I'd keep these in the same folder together. Start the application and you should be faced with the todo list!
 ![image](https://github.com/adrian-azan/Valheim-Todo/assets/21688569/a4492c40-2fd7-4a10-931d-2435d82d2cde)
 
-From here you can select a recipe to start tracking on the todo. **Left clicking** a recipe will add the meterials needed, while **right clicking** the recipe will remove those materials.
+From here you can select a recipe to start tracking on the todo. **Left clicking** a recipe will add the meterials needed, while **right clicking** the recipe will remove those materials. Scrolling up with the mouse wheel will add materials, and scrolling down will remove them.
 ![image](https://github.com/adrian-azan/Valheim-Todo/assets/21688569/46438957-652e-45fa-82e1-ae26249a3366)
 
 To navigate between the different crafting categories you need to use the **'E'** and **'Q'** keys.
