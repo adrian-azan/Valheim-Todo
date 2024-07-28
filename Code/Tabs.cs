@@ -36,6 +36,7 @@ public partial class Tabs : Node2D
         _size = _menus.Count;
 
         GetNode<CustomSignals>("/root/CustomSignals").AddToTotal += Add;
+        GetNode<CustomSignals>("/root/CustomSignals").Clear += Clear;
     }
 
     public static Tabs operator ++(Tabs target)
@@ -120,5 +121,14 @@ public partial class Tabs : Node2D
             _menuTotals[_selected].Text = "";
         else
             _menuTotals[_selected].Text = total.ToString();
+    }
+
+    public void Clear()
+    {
+        foreach (var menuTotal in _menuTotals)
+        {
+            menuTotal.Text = "";
+            menuTotal.SetMeta("total", Variant.From(0));
+        }
     }
 }

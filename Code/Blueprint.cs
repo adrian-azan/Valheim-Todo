@@ -21,6 +21,8 @@ public partial class Blueprint : Button
         _cumulativeList = GetNode("../../../List") as List;
         _total = 0;
         _totalLabel = GetNode("Total") as Label;
+
+        GetNode<CustomSignals>("/root/CustomSignals").Clear += ClearTotal;
     }
 
     private void Clicked(InputEvent @event)
@@ -30,13 +32,13 @@ public partial class Blueprint : Button
             if (inputEventMouse is InputEventMouseMotion)
                 return;
 
-            if (inputEventMouse.ButtonMask == MouseButtonMask.Left)
+            if (inputEventMouse.ButtonMask == MouseButtonMask.Left || Input.IsActionJustPressed("AddMultiple"))
             {
                 _cumulativeList.AddMaterials(_blueprint);
                 _total++;
                 GetNode<CustomSignals>("/root/CustomSignals").EmitSignal(nameof(CustomSignals.AddToTotal), 1);
             }
-            else if (inputEventMouse.ButtonMask == MouseButtonMask.Right && _total > 0)
+            else if ((inputEventMouse.ButtonMask == MouseButtonMask.Right && _total > 0) || (Input.IsActionJustPressed("RemoveMultiple") && _total > 0))
             {
                 _cumulativeList.RemoveMaterials(_blueprint);
                 _total--;
@@ -48,5 +50,11 @@ public partial class Blueprint : Button
             else
                 _totalLabel.Text = "";
         }
+    }
+
+    public void ClearTotal()
+    {
+        _total = 0;
+        _totalLabel.Text = "";
     }
 }

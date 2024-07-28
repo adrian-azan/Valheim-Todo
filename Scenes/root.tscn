@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://1wqi51fdcwe2"]
+[gd_scene load_steps=9 format=3 uid="uid://1wqi51fdcwe2"]
 
 [ext_resource type="PackedScene" uid="uid://cjelheoakhlhi" path="res://Scenes/Menu_Misc.tscn" id="1_ew565"]
 [ext_resource type="Script" path="res://Code/Root.cs" id="1_ggbcd"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d1fhqyks0lhuk" path="res://Scenes/Tabs.tscn" id="5_cwuhv"]
 [ext_resource type="PackedScene" uid="uid://d2lp470wjsk5k" path="res://Scenes/Menu_Furniture.tscn" id="5_dku0v"]
 [ext_resource type="PackedScene" uid="uid://bix3m3f2rc25p" path="res://Scenes/Menu_Food.tscn" id="6_kp8yc"]
+[ext_resource type="Script" path="res://Scenes/ClearButton.cs" id="8_hpxy1"]
 
 [node name="Root" type="Node2D"]
 script = ExtResource("1_ggbcd")
@@ -23,3 +24,13 @@ position = Vector2(1012, 7)
 [node name="Menu_Furniture" parent="." instance=ExtResource("5_dku0v")]
 
 [node name="Menu_Food" parent="." instance=ExtResource("6_kp8yc")]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 446.0
+offset_right = 232.0
+offset_bottom = 497.0
+text = "Clear"
+script = ExtResource("8_hpxy1")
+
+[connection signal="gui_input" from="Button" to="Button" method="ClearMaterials"]

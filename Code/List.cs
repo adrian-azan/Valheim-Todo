@@ -11,6 +11,8 @@ public partial class List : Node2D
     {
         _materialsRequired = new Dictionary<Materials, int>();
         _materialsRequiredText = GetNode("ListText") as Label;
+
+        GetNode<CustomSignals>("/root/CustomSignals").Clear += ClearMaterials;
     }
 
     public void AddMaterials(Dictionary<Materials, int> _recipe)
@@ -37,6 +39,17 @@ public partial class List : Node2D
                 if (_materialsRequired[material] == 0)
                     _materialsRequired.Remove(material);
             }
+        }
+
+        UpdateListText();
+    }
+
+    public void ClearMaterials()
+    {
+        foreach (Materials material in _materialsRequired.Keys)
+        {
+            _materialsRequired[material] = 0;
+            _materialsRequired.Remove(material);
         }
 
         UpdateListText();
